@@ -3,7 +3,8 @@
 
 dateNow=`date +%F`
 logFile=".genrep.log"
-repoFile="/home/skg/Documents/notes/task_reminders/to_do_things_Main*.txt"
+fileLoc="/home/skg/Documents/notes/task_reminders/to_do_things_Main*.txt" #Any file from which you want to send content
+repoFile=fileLoc
 
 #Check if log file is present in for every execution
 checkLogifile () {
@@ -40,10 +41,5 @@ checkWeekDay () {
 		echo "I am on weekend off" >> $logFile
 	fi
 }
-
-#calculateBugs () {
-	
-#}
-
 
 checkWeekDay
