@@ -5,6 +5,7 @@ dateNow=`date +%F`
 logFile=".genrep.log"
 fileLoc="/home/skg/Documents/notes/task_reminders/to_do_things_Main*.txt" #Any file from which you want to send content
 repoFile=fileLoc
+mailToAdd="xyz@gmail.com"
 
 #Check if log file is present in for every execution
 checkLogifile () {
@@ -20,7 +21,7 @@ checkLogifile () {
 #Create report on based on given file input
 generateReport () {
 	echo "`date`	-	Generating test report for time `date +%c` " >> $logFile
-	cat $repoFile | mail -s "Task Reports for $dateNow" siddharthagout@gmail.com # here provide more emails if require using space separated
+	cat $repoFile | mail -s "Task Reports for $dateNow" $mailToAdd # here provide more emails if require using space separated
 	echo "`date`	-	Generated report is as followed: " >> $logFile
 	echo "****************************************************************************************************"  >> $logFile
 	cat $repoFile >> $logFile
@@ -43,3 +44,4 @@ checkWeekDay () {
 }
 
 checkWeekDay
+
