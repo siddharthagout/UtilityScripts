@@ -2,9 +2,8 @@
 #This script send text mentioned in particular file to mentioned receipient.
 
 dateNow=`date +%F`
-logFile=".genrep.log"
-fileLoc="/path/to/your/file" #Any file from which you want to send content
-repoFile=fileLoc
+logFile="./.genrep.log"
+repoFile="/path/to/your/file" #Any file from which you want to send content
 mailToAdd="your_email@gmail.com"
 
 #Check if log file is present in for every execution
