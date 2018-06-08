@@ -3,9 +3,9 @@
 
 dateNow=`date +%F`
 logFile=".genrep.log"
-fileLoc="/home/skg/Documents/notes/task_reminders/to_do_things_Main*.txt" #Any file from which you want to send content
+fileLoc="/path/to/your/file" #Any file from which you want to send content
 repoFile=fileLoc
-mailToAdd="xyz@gmail.com"
+mailToAdd="your_email@gmail.com"
 
 #Check if log file is present in for every execution
 checkLogifile () {
