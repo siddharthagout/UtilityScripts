@@ -1,5 +1,5 @@
 #!/bin/bash
-#This script send text mentioned in particular file to mentioned receipient.
+#This script sends text mentioned in particular file to mentioned receipient.
 
 dateNow=`date +%F`
 logFile="./.genrep.log"
